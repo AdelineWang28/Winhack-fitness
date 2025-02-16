@@ -1,0 +1,122 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "Running",
+    "body": "30-minute morning run at the park."
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "Cycling",
+    "body": "20km cycling session around the city."
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "Swimming",
+    "body": "45-minute freestyle swimming in the pool."
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "Yoga",
+    "body": "60-minute relaxation and stretching exercises."
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "Weightlifting",
+    "body": "Upper body strength training for 45 minutes."
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "Jump Rope",
+    "body": "15-minute high-intensity jump rope workout."
+  },
+  {
+    "userId": 1,
+    "id": 7,
+    "title": "Hiking",
+    "body": "2-hour mountain hiking adventure."
+  },
+  {
+    "userId": 1,
+    "id": 8,
+    "title": "Dancing",
+    "body": "45-minute dance cardio workout."
+  },
+  {
+    "userId": 1,
+    "id": 9,
+    "title": "Pilates",
+    "body": "30-minute core and flexibility training."
+  },
+  {
+    "userId": 1,
+    "id": 10,
+    "title": "Rowing",
+    "body": "40-minute indoor rowing machine session."
+  },
+  {
+    "userId": 2,
+    "id": 11,
+    "title": "Boxing",
+    "body": "60-minute boxing training session."
+  },
+  {
+    "userId": 2,
+    "id": 12,
+    "title": "Soccer",
+    "body": "90-minute soccer match with friends."
+  },
+  {
+    "userId": 2,
+    "id": 13,
+    "title": "Tennis",
+    "body": "60-minute singles tennis match."
+  },
+  {
+    "userId": 2,
+    "id": 14,
+    "title": "Badminton",
+    "body": "45-minute casual badminton game."
+  },
+  {
+    "userId": 2,
+    "id": 15,
+    "title": "Basketball",
+    "body": "60-minute full-court basketball game."
+  },
+  {
+    "userId": 2,
+    "id": 16,
+    "title": "Climbing",
+    "body": "Indoor rock climbing for 1 hour."
+  },
+  {
+    "userId": 2,
+    "id": 17,
+    "title": "Martial Arts",
+    "body": "45-minute karate and self-defense training."
+  },
+  {
+    "userId": 2,
+    "id": 18,
+    "title": "Golf",
+    "body": "90-minute golf practice session."
+  },
+  {
+    "userId": 2,
+    "id": 19,
+    "title": "Skateboarding",
+    "body": "30-minute street skateboarding session."
+  },
+  {
+    "userId": 2,
+    "id": 20,
+    "title": "Surfing",
+    "body": "1-hour surfing session at the beach."
+  }
+]

@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="flex bg-gray-100 min-h-screen">
+    <div class="w-64 bg-gray-900 text-white p-4 flex flex-col min-h-screen">
+        <a href="#" class="block py-3 px-4 rounded-lg hover:bg-gray-700" onclick="showPage('profile')">
+            🏃‍♂️ Profile Information
+        </a>
+        <a href="#" class="block py-3 px-4 rounded-lg hover:bg-gray-700" onclick="showPage('exercise')">
+            💪 Exercise Records
+        </a>
+        <a href="#" class="block py-3 px-4 rounded-lg hover:bg-gray-700" onclick="showPage('statistics')">
+            📊 Statistics
+        </a>
+        <a href="#" class="block py-3 px-4 rounded-lg hover:bg-gray-700" onclick="showPage('goal-settings')">
+            🎯 Goal Settings
+        </a>
+        
+    </div>
+
+    <!-- Content -->
+    <div class="flex-1 p-6">
+        <!-- Profile Information Page -->
+        <div id="profile" class="page active">
+            <h2 class="text-2xl font-bold mb-4">Profile Information</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <label class="block text-gray-700">Name:</label>
+                <input type="text" id="name" class="w-full p-2 border rounded-md mb-4" placeholder="Enter your name">
+                
+                <label class="block text-gray-700">Age:</label>
+                <input type="number" id="age" class="w-full p-2 border rounded-md mb-4" placeholder="Enter your age">
+                
+                <label class="block text-gray-700">Height (cm):</label>
+                <input type="number" id="height" class="w-full p-2 border rounded-md mb-4" placeholder="Enter your height">
+                
+                <label class="block text-gray-700">Weight (kg):</label>
+                <input type="number" id="weight" class="w-full p-2 border rounded-md mb-4" placeholder="Enter your weight">
+                
+                <button onclick="saveProfile()" class="bg-blue-500 text-white px-4 py-2 rounded-md w-full">Save Profile</button>
+                <div id="profile-info" class="mt-4"></div>
+            </div>
+        </div>
+
+        <!-- Exercise Records Page -->
+        <div id="exercise" class="page hidden">
+            <h2 class="text-2xl font-bold mb-4">Exercise Records</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <label class="block text-gray-700">Exercise Name:</label>
+                <input type="text" id="exercise-name" class="w-full p-2 border rounded-md mb-4" placeholder="Enter exercise name">
+                
+                <label class="block text-gray-700">Duration (minutes):</label>
+                <input type="number" id="exercise-duration" class="w-full p-2 border rounded-md mb-4" placeholder="Enter exercise duration">
+                
+                <label class="block text-gray-700">Calories Burned:</label>
+                <input type="number" id="calories-burned" class="w-full p-2 border rounded-md mb-4" placeholder="Enter calories burned">
+                
+                <label class="block text-gray-700">Exercise Date:</label>
+                <input type="date" id="exercise-date" class="w-full p-2 border rounded-md mb-4">
+                
+                <button onclick="saveExercise()" class="bg-blue-500 text-white px-4 py-2 rounded-md w-full hover:bg-blue-600">Save Exercise Record</button>
+                
+            </div>
+            <div id="exercise-records" class="mt-4"></div>
+        </div>
+
+        <!-- Body Management Page (Optional) -->
+        <!--<div id="body-management" class="page">
+            <h2>Body Management</h2>
+            <div id="profile-info"></div>
+            <div id="exercise-records"></div>
+        </div>-->
+
+        <!-- Statistics Page -->
+        <div id="statistics" class="page hidden">
+            <h2 class="text-2xl font-bold mb-4">Statistics</h2>
+            <label class="block text-gray-700">Filter Type:</label>
+            <select id="filter-type" class="w-full p-2 border rounded-md mb-4" onchange="updateChart()">
+                <option value="month">Month</option>
+                <option value="year">Year</option>
+            </select>
+            <canvas id="caloriesChart" class="bg-white p-4 rounded-lg shadow-md"></canvas>
+        </div>
+
+
+        <!-- Goal Settings Page -->
+        <div id="goal-settings" class="page hidden">
+            <h2 class="text-2xl font-bold mb-4">Goal Settings</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <label class="block text-gray-700">Weekly Goal (Calories):</label>
+                <input type="number" id="weekly-goal" class="w-full p-2 border rounded-md mb-4" placeholder="Enter weekly calorie goal">
+                
+                <label class="block text-gray-700">Monthly Goal (Calories):</label>
+                <input type="number" id="monthly-goal" class="w-full p-2 border rounded-md mb-4" placeholder="Enter monthly calorie goal">
+                
+                <button onclick="saveGoals()" class="bg-blue-500 text-white px-4 py-2 rounded-md w-full hover:bg-blue-600">Save Goals</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
