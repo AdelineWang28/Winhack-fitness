@@ -1,0 +1,24 @@
+Hello everyone! I’m Zhongli Wang, and today I’m excited to present Winhack-Fitness, a fitness tracking app designed to make staying active easy, interactive, and rewarding!
+
+ Key Features:
+1. Profile Management
+   - Enter name, age, height, and weight.  
+   - Realistic input validation (e.g., age 1-150, height 1-250 cm, weight 1-200 kg).  
+   - Invalid inputs trigger error messages for correction.  
+
+2. Exercise Logging
+   - Log exercises with name, duration, and calories burned.  
+   - Validates inputs (duration > 0, calories non-negative).  
+   - Displays workout history in a clean table format.  
+
+3. The Statistics function is mainly used to visualize the user's movement data, help users understand their movement trends, and track calorie consumption
+
+
+4.Goal Setting
+   - Set weekly/monthly calorie burn goals.  
+   - Ensures goals are realistic (no negative values).  
+
+The Reward System encourages users to stay motivated by earning medals based on their progress. Users can achieve Bronze at 100%, Silver at 200%, Gold at 300%, and Diamond at 400% of their fitness goals. This gamification approach makes tracking fitness more engaging and rewarding!---
+
+**Winhack-Fitness makes fitness tracking simple and fun for everyone. Thank you!**  
+
